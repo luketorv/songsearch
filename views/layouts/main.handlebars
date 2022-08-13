@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SongSuggest</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body class="box block is-flex">
+  <header>
+    <h1 class="title">Welcome to SongSuggest</h1>
+  </header>
+  <nav>
+    <a href="/" class="button **is-large is-danger is-rounded**">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="button **is-large is-danger is-rounded**">Logout</button>
+    {{else}}
+    <a href="/login" class="button **is-large is-danger is-rounded**">Login</a>
+    {{/if}}
+  </nav>
+  <main>
+    <aside>
+      <h2>Enjoy the music!</h2>
+    </aside>
+    <div class="music">
+      {{{body}}}
+    </div>
+  </main>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
