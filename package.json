@@ -1,0 +1,24 @@
+{
+  "name": "songsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luketorv/songsearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luketorv/songsearch/issues"
+  },
+  "homepage": "https://github.com/luketorv/songsearch#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  }
+}
