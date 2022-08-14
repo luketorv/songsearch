@@ -1,5 +1,5 @@
 # SongSearch
-SongSearch is a website utilized to find randomized music and save songs to your own personalized list 
+SongSearch is a website utiilized to search artists and see an artists most popular songs in their discography as well as 
 ## Tools Used
 Javascript
 Bulma
