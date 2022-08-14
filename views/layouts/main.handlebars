@@ -11,22 +11,17 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body class="box block is-flex">
-  <header>
-    <h1 class="title">Welcome to SongSuggest</h1>
-  </header>
-  <nav>
+<body>
+  <main class="section">
+    <h1 class="title has-text-centered">SongSuggest</h1>
+      <div class="has-text-centered">
     <a href="/" class="button **is-large is-danger is-rounded**">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="button **is-large is-danger is-rounded**">Logout</button>
     {{else}}
     <a href="/login" class="button **is-large is-danger is-rounded**">Login</a>
     {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Enjoy the music!</h2>
-    </aside>
+  </div>
     <div class="music">
       {{{body}}}
     </div>
