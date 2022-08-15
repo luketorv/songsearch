@@ -9,6 +9,7 @@ const sequelize = require('./config/connection');
 
 const app = express();
 const port = process.env.port || 3001;
+const routes = require("./controllers");
 
 const sess = {
     secret: 'Semi secret',
@@ -24,8 +25,15 @@ app.use(session(sess));
 
 const hbs = exphbs.create({});
 
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
+app.use(express.static(path.join(__dirname,'public')))
+app.use(routes)
+app.listen(port, ()=>console.log("listening"))
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -40,3 +48,4 @@ app.get("/",(req,res)=>{
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });
+

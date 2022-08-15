@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/luketorv/songsearch#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "bulma": "^0.9.4",
     "connect-session-sequelize": "^7.1.4",
     "dotenv": "^16.0.1",
