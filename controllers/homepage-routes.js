@@ -9,7 +9,7 @@ router.get("/search", async(req,res)=>{
     res.render("songinfo")
 })
 
-const router = require('express').Router();
+//const routes = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment, Vote } = require('../models');
 
