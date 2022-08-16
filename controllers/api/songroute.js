@@ -11,7 +11,7 @@ const axios = require("axios");
 const options = {
   method: 'GET',
   url: 'https://theaudiodb.p.rapidapi.com/track-top10.php',
-  params: {s: 'taylor swift'},
+  params: {s: artist},
   headers: {
     'X-RapidAPI-Key': '2f88f713f2mshd21e7aa061f6ac9p10bf6fjsn1e99d0686455',
     'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
