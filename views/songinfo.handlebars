@@ -4,15 +4,18 @@
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 <div>
-      <div class="login-card box">
+  <div class="login-card box">
     <h2 class="page-title has-text-centered">Search</h2>
     <form class="form search-form is-centered">
       <div class="form-group is-centered">
         <label for="artist-search has-text-centered">Artist</label>
         <input class="form-input" type="text" id="artist-search" />
       </div>
+      <ul>
+        <li id="song-list"></li>
+      </ul>
       <div class="form-group">
-        <button class="btn **is-large is-danger is-rounded**" type="submit">search</button>
+        <button class="btn **is-large is-danger is-rounded**" id="search-btn" type="submit">search</button>
       </div>
     </form>
   </div>
