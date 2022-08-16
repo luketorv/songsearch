@@ -7,6 +7,7 @@ router.post("/", async(req,res)=>{
 
 const axios = require("axios");
 
+//get
 const options = {
   method: 'GET',
   url: 'https://theaudiodb.p.rapidapi.com/track-top10.php',
@@ -16,6 +17,14 @@ const options = {
     'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
   }
 };
+
+
+//post
+//axios.post('')
+
+function handleResult(data) {
+    console.log(data)
+}
 
 axios.request(options).then(function (response) {
 	console.log(response.data);
