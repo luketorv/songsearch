@@ -1,23 +1,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
 <div>
   <div class="login-card box">
     <h2 class="page-title has-text-centered">Search</h2>
     <form class="form search-form is-centered">
       <div class="form-group is-centered">
         <label for="artist-search has-text-centered">Artist</label>
-        <input class="form-input" type="text" id="artist-search" />
+        <input class="form-input is-centered" type="text" id="artist-search" />
       </div>
-      <ul>
-        <li id="song-list"></li>
-      </ul>
       <div class="form-group">
         <button class="btn **is-large is-danger is-rounded**" id="search-btn" type="submit">search</button>
       </div>
     </form>
+    <div>
+  <ul class="people_list">
+  {{#each trackNames}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+</div>
   </div>
 </div>
 
