@@ -18,10 +18,7 @@ console.log('over here', req.body)
       }
     };
 
-
-    //post
-    //axios.post('')
-
+    
     axios.request(options).then(function (response) {
       console.log(response.data); 
       const trackNames = []
@@ -29,11 +26,12 @@ console.log('over here', req.body)
         trackNames.push(response.data.track[i].strTrack)
       }
       console.log(trackNames)
-      res.render('songinfo', {trackNames})
+      res.send(trackNames)
     }).catch(function (error) {
       console.error(error);
     });
-    
+
+
    // console.log(req.body) 
 })
 
