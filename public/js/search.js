@@ -44,13 +44,21 @@ var songList = document.querySelector('#song-list')
 const searchFormHandler = async (event) => {
   event.preventDefault();
   const artist = document.querySelector('#artist-search').value;
-  console.log('over here', artist)
   if (artist) {
     const response = await fetch('/api/songs', {
       method: 'POST',
       body: JSON.stringify({ artist }),
       headers: { 'Content-Type': 'application/json' },
     });
+  
+    const tracks = await response.json()
+    const list = document.getElementById("song-list")
+    tracks.forEach((track)=>{
+      const songEl = document.createElement('li');
+      songEl.appendChild(document.createTextNode(track))
+      list.append(songEl)
+    })
+}
   
   //   if (response.ok) {
   //     console.log('response here', response);
@@ -60,8 +68,7 @@ const searchFormHandler = async (event) => {
   //   } else {
   //     alert('Search Unsuccessful');
   //   }
-   }
-};
+   };
 
 
 document
