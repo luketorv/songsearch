@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS suggest_db;
+
+CREATE DATABASE suggest_db;

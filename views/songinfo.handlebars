@@ -1,0 +1,21 @@
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+<div>
+  <div class="box">
+    <form class="form search-form columns is-mobile">
+      <div class="media form-group is-centered">
+        <label for="artist-search" class="has-text-centered">Artist:</label>
+        <input class="form-input media-center input is-centered" type="text" id="artist-search" />
+      </div>
+      <div class="form-group">
+        <button class="button is-danger" id="search-btn" type="submit">Search</button>
+      </div>
+    </form>
+    <div>
+    <ol id="song-list" class="has-text-centered"></ol>
+</div>
+  </div>
+</div>
+
+<script src="./js/search.js"></script>
