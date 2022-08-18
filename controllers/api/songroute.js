@@ -7,12 +7,16 @@ router.post("/", async(req,res)=>{
 
    // const axios = require("axios");
 console.log('over here', req.body)
-    //get
+    
+
+
+// API GET for top 10 tracks
     const options = {
       method: 'GET',
       url: 'https://theaudiodb.p.rapidapi.com/track-top10.php',
       params: {s: req.body.artist},
       headers: {
+        // APIKEY protected with environment variables
         'X-RapidAPI-Key': process.env.APIKEY,
         'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
       }
