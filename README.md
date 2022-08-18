@@ -8,11 +8,20 @@ SO THAT I can have conversations with other music lovers and find the most popul
 
 ## Technologies Used
 Javascript
+Axios
 Bulma
 Handlebars
 MySql
+Sequelize
+
 
 ## Presentation 
+
+![1songsuggest2](https://user-images.githubusercontent.com/104324965/185283894-4d4e3132-b97a-40e1-b128-fe13c242a62c.jpg)
+
+![1songsuggest1](https://user-images.githubusercontent.com/104324965/185283985-5e1eb8b6-1b02-4b05-af9b-6ff8244195f5.jpg)
+
+
 
 
 ## Contribution
