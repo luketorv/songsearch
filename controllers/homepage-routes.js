@@ -52,7 +52,7 @@ const { Post, User, Comment, Vote } = require('../models');
 //       res.status(500).json(err);
 //     });
 // });
-
+// note
 // get single post
 router.get('/post/:id', (req, res) => {
   Post.findOne({
