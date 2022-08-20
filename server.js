@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express');
 const exphbs = require('express-handlebars');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const routes = require("./controllers");
 const session = require("express-session");
 const sequelize = require("./config/connection.js");
@@ -30,6 +30,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(express.static(path.join(__dirname,'public')))
 app.use(routes)
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+app.listen(port, ()=>{
+  console.log("listening");
+  sequelize.sync({force: false})
 });
