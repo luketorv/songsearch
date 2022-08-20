@@ -1,4 +1,4 @@
-# SongSearch
+# SongSuggest
 SongSearch is a website utiilized to search artists and see an artists most popular songs in their discography as well as create a forum for music lovers to provide commentary and likes to songs
 ## User Story
 As a Music Fanatic
